@@ -2,7 +2,6 @@
 #  Love, Bride & Lace — Serverless Cloud Architecture on AWS
 ### Empowering a Local Bridal Boutique with a Fast, Secure, and Scalable Cloud-Hosted Website
 
----
 
 ##  Overview
 This project demonstrates how **cloud computing** can transform a local business by delivering **speed, security, and scalability** through a **serverless AWS architecture**.
@@ -12,7 +11,6 @@ However, the business faced performance and security issues that limited its dig
 
 This technical case study documents the **problem**, **architecture**, **tools**, **deployment process**, and **outcomes** of implementing an **AWS-powered serverless solution**.
 
----
 
 ##  The Problem
 The original website had several challenges:
@@ -24,7 +22,6 @@ The original website had several challenges:
 
 A secure, fast, and reliable digital foundation was essential to enhance user experience and business growth.
 
----
 
 ##  Architecture Strategy
 The goal was to design a **cost-effective, fully serverless architecture** that ensures:
@@ -108,7 +105,10 @@ After deployment, the website was:
 
 | Metric | Before | After |
 |--------|--------|-------|
-| Page Load Time | ~4.8s | **1.9s** |
+| Page Load Time | ~4.8s | **1.9s** | 
+| Total cumulative wait time | ~4.23s | |
+| Average wait time per request | ~63ms | |
+| Longest individual wait time | ~192 ms (for hero-desktop.jpg) | |
 | Uptime | 93% | **99.99%** |
 | HTTPS Security | None | **Enabled (ACM)** |
 | Monthly Hosting Cost | ~R500 | **< R100** |
@@ -139,7 +139,6 @@ By combining **S3, CloudFront, ACM, and Lambda@Edge**, Love, Bride & Lace now ha
 
 > “Serverless architecture gave the boutique peace of mind — their site just works, securely and at scale.”
 
----
 
 ## 🚀 Next Steps
 - Add a contact form using **AWS Lambda + Amazon SES**.  
