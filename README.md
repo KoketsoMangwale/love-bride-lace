@@ -34,13 +34,14 @@ The goal was to design a **cost-effective, fully serverless architecture** that 
 
 | AWS Service | Purpose |
 |--------------|----------|
-| **Amazon S3** | Static website hosting and storage for HTML, CSS, JS, and images. |
-| **Amazon CloudFront** | Global content delivery network (CDN) with caching and DDoS protection. |
-| **AWS Certificate Manager (ACM)** | Provision and manage SSL/TLS certificates for HTTPS. |
 | **Amazon Route 53** | DNS routing and custom domain management. |
+| **AWS Certificate Manager (ACM)** | Provision and manage SSL/TLS certificates for HTTPS. |
+| **Amazon CloudFront** | Global content delivery network (CDN) with caching and DDoS protection. |
+| **Amazon S3** | Static website hosting and storage for HTML, CSS, JS, and images. |
+| **AWS AppSync** | Access the DyanamoDB Appointments and Contact Inquiry data using GraphQL. |
+| **AWS Lambda** | Runs Node.js code for processing bookings and inquiries without servers. |
 | **Lambda@Edge** | SEO redirects, metadata injection, and HTTPS enforcement. |
 | **AWS IAM** | Secure access control with least-privilege policies. |
-
 ---
 
 ##  System Architecture
@@ -66,7 +67,8 @@ User Request → Route 53 (DNS)
 ### 1️⃣ Host the Website on S3
 - Created an S3 bucket named `lovebrideandlace.co.za`.  
 - Uploaded static website files (HTML, CSS, JS, images).  
-- Enabled **Static Website Hosting**.
+- Ensured **Static Website Hosting** is disabled
+- Ensured Block all public access is on.
 
 ### 2️⃣ Configure CloudFront
 - Set the S3 bucket as the **Origin Domain**.  
@@ -94,10 +96,9 @@ User Request → Route 53 (DNS)
 ## 💡 The Solution
 After deployment, the website was:
 
-- 🌐 Hosted entirely on **Amazon S3 + CloudFront** (serverless).  
-- 🔒 Fully secured with **ACM-issued SSL certificate**.  
-- ⚡ Optimized for **fast performance and SEO**.  
-- 🔁 Integrated with **automated CI/CD** for easy updates (via AWS CLI or GitHub Actions).  
+-  Hosted entirely on **Amazon S3 + CloudFront** (serverless).  
+-  Fully secured with **ACM-issued SSL certificate**.  
+-  Optimized for **fast performance and SEO**.  
 
 ---
 
@@ -125,7 +126,7 @@ After deployment, the website was:
 
 ## 🧾 Tech Stack
 
-- **AWS Services:** S3, CloudFront, Route 53, ACM, IAM, Lambda@Edge  
+- **AWS Services:** S3, CloudFront, Route 53, ACM, IAM, Lambda, Lambda@Edge  
 - **Languages:** HTML5, CSS3, JavaScript  
 - **Tools:** GitHub, AWS CLI, CloudFormation, tinyPNG (https://tinypng.com/)
 - **Methodology:** Serverless Architecture, IaC, SEO Optimization
@@ -151,6 +152,5 @@ By combining **S3, CloudFront, ACM, and Lambda@Edge**, Love, Bride & Lace now ha
 ## 📎 Author
 **Koketso B. Mangwale**  
 Cloud Computing | Analyst Programmer| AWS Practitioner  
-[LinkedIn](https://linkedin.com) • [GitHub](https://github.com) • [Email](mailto:)
 
 
