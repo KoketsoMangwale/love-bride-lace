@@ -46,14 +46,7 @@ The goal was to design a **cost-effective, fully serverless architecture** that 
 
 ##  System Architecture
 
-```
-
-User Request → Route 53 (DNS)
-→ CloudFront (CDN + HTTPS)
-→ S3 Bucket (Static Website Origin)
-→ Lambda@Edge (SEO Optimization)
-
-```
+![Alt text](HighLevelArch.png)
 
 - **CloudFront** caches website assets at edge locations for low latency.  
 - **S3** acts as a durable, serverless origin.  
