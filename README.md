@@ -105,7 +105,7 @@ After deployment, the website was:
 
 | Metric | Before | After |
 |--------|--------|-------|
-| Page Load Time | ~4.8s | **1.9s** | 
+| Page Load Time | ~4.8s (POOR) | **1.9s** | 
 | Total cumulative wait time | ~4.23s | |
 | Average wait time per request | ~63ms | |
 | Longest individual wait time | ~192 ms (for hero-desktop.jpg) | |
@@ -127,7 +127,7 @@ After deployment, the website was:
 
 - **AWS Services:** S3, CloudFront, Route 53, ACM, IAM, Lambda@Edge  
 - **Languages:** HTML5, CSS3, JavaScript  
-- **Tools:** GitHub, AWS CLI, CloudFormation  
+- **Tools:** GitHub, AWS CLI, CloudFormation, tinyPNG (https://tinypng.com/)
 - **Methodology:** Serverless Architecture, IaC, SEO Optimization
 
 ---
