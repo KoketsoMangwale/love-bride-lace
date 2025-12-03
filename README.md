@@ -76,13 +76,12 @@ The goal was to design a **cost-effective, fully serverless architecture** that 
 ### 4️⃣ Implement Security
 - Restricted S3 bucket access to CloudFront only.  
 - Applied least-privilege **IAM policies**.  
-- Forced HTTPS redirects with **Lambda@Edge**.
+- Forced HTTPS redirects with **Cloudfront Viewer protocol policy**.
 
 ### 5️⃣ SEO Optimization (Lambda@Edge)
 - Created a Node.js function to:
   - Redirect non-www → www.  
   - Add meta tags and Open Graph data dynamically.  
-  - Enforce HTTPS redirection.
 
 ---
 
@@ -121,7 +120,7 @@ After deployment, the website was:
 
 - **AWS Services:** S3, CloudFront, Route 53, ACM, IAM, Lambda, Lambda@Edge  
 - **Languages:** HTML5, CSS3, JavaScript  
-- **Tools:** GitHub, AWS CLI, CloudFormation, tinyPNG (https://tinypng.com/)
+- **Tools:** GitHub, AWS CLI, CloudFormation, tinyPNG (https://tinypng.com/), pingdom (https://tools.pingdom.com/)
 - **Methodology:** Serverless Architecture, IaC, SEO Optimization
 
 ---
