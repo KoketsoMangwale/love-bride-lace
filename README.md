@@ -98,10 +98,10 @@ After deployment, the website was:
 
 | Metric | Before | After |
 |--------|--------|-------|
-| Page Load Time | ~4.8s (POOR) | **1.9s** | 
-| Total cumulative wait time | ~4.23s | |
-| Average wait time per request | ~63ms | |
-| Longest individual wait time | ~192 ms (for hero-desktop.jpg) | |
+| Page Load Time | ~4.8s (POOR) | **1.65s** | 
+| Total cumulative wait time | ~4.23s | ~1.05s |
+| Average wait time per request | ~63ms | ~37.9 ms |
+| Longest individual wait time | ~192 ms (for hero-desktop.jpg) | 473.62 ms |
 | Uptime | 93% | **99.99%** |
 | HTTPS Security | None | **Enabled (ACM)** |
 | Monthly Hosting Cost | ~R500 | **< R100** |
