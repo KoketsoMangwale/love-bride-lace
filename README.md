@@ -120,7 +120,7 @@ After deployment, the website was:
 
 - **AWS Services:** S3, CloudFront, Route 53, ACM, IAM, Lambda, Lambda@Edge  
 - **Languages:** HTML5, CSS3, JavaScript  
-- **Tools:** GitHub, AWS CLI, CloudFormation, tinyPNG (https://tinypng.com/), pingdom (https://tools.pingdom.com/)
+- **Tools:** GitHub, AWS CLI, CloudFormation, tinyPNG (https://tinypng.com/), pingdom (https://tools.pingdom.com/), PageSpeed Insights (https://pagespeed.web.dev/)
 - **Methodology:** Serverless Architecture, IaC, SEO Optimization
 
 ---
