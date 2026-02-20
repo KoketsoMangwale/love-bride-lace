@@ -134,7 +134,9 @@ By combining **S3, CloudFront, ACM, and Lambda@Edge**, Love, Bride & Lace now ha
 
 
 ## 🚀 Next Steps
-- Add a contact form using **AWS Lambda + Amazon SES**.  
+- Add a contact form using **AWS Lambda + Amazon SES**.
+- Serve compressed files for SEO.
+- Integrate with whatsapp
 - Enable **analytics tracking** with AWS Pinpoint or Google Analytics.  
 - Integrate **e-commerce capabilities** via AWS Amplify or Shopify API.  
 - Automate deployments with **GitHub Actions CI/CD**.
